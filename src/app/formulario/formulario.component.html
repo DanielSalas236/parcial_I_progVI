@@ -1,0 +1,14 @@
+<h3>Login</h3>
+<mat-grid-list cols="2" rowHeight="9:1">
+  <mat-grid-tile><mat-form-field>
+    <mat-label>Nombre</mat-label>
+    <input type="text" matInput placeholder="Mohamed" [formControl]="nombre"/>
+  </mat-form-field></mat-grid-tile>
+  <mat-grid-tile><mat-form-field>
+    <mat-label>Clave</mat-label>
+    <input type="password" matInput placeholder="clave" [formControl]="clave"/>
+  </mat-form-field></mat-grid-tile>
+</mat-grid-list>
+<mat-grid-list cols="1" rowHeight="9:1">
+  <mat-grid-tile><button color="accent" mat-button (click)='onIniciar()'>Ok</button></mat-grid-tile>
+</mat-grid-list>
