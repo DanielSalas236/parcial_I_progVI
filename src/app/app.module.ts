@@ -49,13 +49,23 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatTreeModule} from '@angular/material/tree';
 import {ReactiveFormsModule} from '@angular/forms';
+import { LoginComponent } from './login/login.component';
+import { MenuComponent } from './menu/menu.component';
+import { ConsultarComponent } from './consultar/consultar.component';
+import { ConsignarComponent } from './consignar/consignar.component';
+import { RetirarComponent } from './retirar/retirar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FormularioComponent,
     CardsComponent,
-    TablaComponent
+    TablaComponent,
+    LoginComponent,
+    MenuComponent,
+    ConsultarComponent,
+    ConsignarComponent,
+    RetirarComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,6 @@
+<h3>Digite el monto a consignar</h3>
+<mat-form-field>
+    <mat-label>Valor</mat-label>
+    <input type="number" onkeypress="return event.charCode >=48" min="1" matInput placeholder="$" [formControl]="consignacion"/>
+  </mat-form-field><br>
+  <button color="primary" mat-raised-button (click)='onConsignar()'>Ok</button>

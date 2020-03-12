@@ -1,0 +1,12 @@
+
+<div class="login-form">
+<mat-form-field>
+      <mat-label>Nombre</mat-label>
+      <input type="text" matInput placeholder="Mohamed" [formControl]="nombre"/>
+    </mat-form-field><br>
+<mat-form-field>
+      <mat-label>Clave</mat-label>
+      <input type="password" matInput placeholder="clave" [formControl]="clave"/>
+    </mat-form-field><br>
+<button color="primary" mat-button (click)='onIniciar()'>Ok</button>
+</div>
