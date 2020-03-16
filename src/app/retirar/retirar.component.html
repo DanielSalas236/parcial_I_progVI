@@ -1,1 +1,8 @@
-<p>retirar works!</p>
+<h3>Digite el monto a retirar</h3>
+<h4>Cantidad de retiros: {{cant_retiros}}</h4>
+<mat-form-field>
+    <mat-label>Valor</mat-label>
+    <input type="number" onkeypress="return event.charCode >=48" min="1" matInput placeholder="$" [formControl]="retirar"/>
+  </mat-form-field><br>
+  <button color="primary" mat-raised-button (click)='onRetirar()'>Ok</button>
+  <button mat-raised-button color="primary" routerLink="/menu">Volver</button>

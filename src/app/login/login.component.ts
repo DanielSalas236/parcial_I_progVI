@@ -18,6 +18,7 @@ onIniciar(){
   if(this.nombre.value == 'admin' && this.clave.value == 'admin'){
    console.log('Inicio correcto');
    localStorage.setItem('saldo', '100000');
+   localStorage.setItem('cant_retiros', '3');
    console.log(localStorage.getItem('saldo'));
    this.router.navigate(['/menu']);
   }else{
